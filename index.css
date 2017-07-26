@@ -25,7 +25,7 @@ h1 {
 	outline: none;
 }
 
-.main-wrapper {
+.game-wrapper {
 	text-align: center;
 	margin: auto;
 	width: 625px;
@@ -114,4 +114,37 @@ h1 {
 .cell-highlight {
 	color: #ecf0f1;
 	background: #3498db;
+}
+
+.win-prize {
+	margin-top: 30px;
+}
+
+.play-again {
+	color: white;
+	width: 800px;
+	margin: auto;
+	line-height: 1.5em;
+}
+
+.play-again li {
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.play-again-btn {
+	margin: 30px auto 0;
+	font-size: 20px;
+}
+
+.play-again-btn a {
+	text-decoration: none;
+	color: white;
+	padding: 15px 30px;
+	background: #2ecc71;
+	border-radius: 10px;
+}
+
+.play-again-btn a:hover {
+	background-color: #27ae60;
 }

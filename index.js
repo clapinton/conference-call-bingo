@@ -44,7 +44,6 @@ function createRowEl(id) {
 }
 
 function renderCard() {
-	// var cardWrapperEl = $('.card-wrapper');
 	var cardWrapperEl = $('.card-wrapper');
 	var rowNum = 0;
 	var baseRowHtml = createRowEl(0);
@@ -117,7 +116,7 @@ function hitBingo(cell) {
 }
 
 function gameOver() {
-	$('.card-wrapper').addClass('hide-wrapper');
+	$('.game-wrapper').addClass('hide-wrapper');
 	$('.win-prize').removeClass('hide-wrapper')
 	console.log('GAME OVER!!');
 }
@@ -126,6 +125,7 @@ function clickHandler(e) {
 	var cell = e.target;
 	$(cell).toggleClass("cell-marked");
 	$("#quick-search")[0].value = "";
+	$("#quick-search")[0].focus();
 	if (hitBingo(cell)) return gameOver() ;
 	resetCellHighlights();
 }
